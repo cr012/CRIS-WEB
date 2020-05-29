@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+  <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="contenedor">
+<form action="mailto:emailDestino@email.com" method="post" enctype="text/plain">
+<label for="nombre">Nombre: </label><input type="text" name="nombre" size="25" maxlength="50"><br><br>
+<label for="apellidos">Apellidos: </label><input type="text" name="apellidos" size="35" maxlength="100">
+<br>
+<br>
+<label for="correo">Correo electrónico: </label><input type="text" value="@" name="correo" size="40" maxlength="100">
+<br>
+<br>
+<label for="poblacion">Población: </label><input type="text" name="poblacion" size="15" maxlength="50">
+<br>
+<br>
+<label for="provincia">Provincia: </label><input type="text" name="provincia" size="15" maxlength="50">
+<br>
+<br>
+<label for="edad">Edad:</label>
+<br>
+<input type="radio" id="edad1" name="edad" value="1"><label for="edad1">0-20</label>
+<br>
+<input type="radio" id="edad2" name="edad" value="2" checked><label for="edad2">20-40</label>
+<br>
+<input type="radio" id="edad3" name="edad" value="3"><label for="edad3">40-60</label>
+<br>
+<input type="radio" id="edad4" name="edad" value="4"><labe
+<br>
+<br>
+<label for="conocer">Cómo nos conociste?</label><br>
+<input type="checkbox" name="conocer">
+A través de un amigo.<br>
+<input type="checkbox" name="conocer">
+A través de un buscador.<br>
+<input type="checkbox" name="conocer">
+Navegando por la red.<br>
+<input type="checkbox" name="conocer">
+Otros.
+<br>
+<br>
+<label for="opinion">Describa su problema</label><br>
+<textarea cols="40" rows="5" name="opinion">Escribe...</textarea>
+<br>
+<br>
+<label for="sugerencias">Tienes alguna sugerencia...</label>
+<br>
+<textarea cols="40" rows="5" name="sugerencias">Escribe tus sugerencias...</textarea>
+<br>
+<br>
+<label for="frecuencia">Cuánto navegas por Intenet? (Señala la opción más aproximada)</label><br>
+<select name="frecuencia" size="2">
+<option value="1">2 horas al día.
+<option value="2">4 horas al día.
+<option value="3">10 horas a la semana.
+<option value="4">20 horas al mes.
+</select>
+<br>
+<br>
+<input type="submit" value="Enviar formulario">
+<input type="Reset" value="Borrar formulario">
+</form>   
+</div>
+</body>
+</html>
+
+{% endblock %}

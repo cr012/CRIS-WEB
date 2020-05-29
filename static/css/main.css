@@ -1,0 +1,36 @@
+
+body {
+   background: rgb(6, 79, 121);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, rgb(20, 1, 4), rgb(13, 13, 14));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, rgb(90, 13, 37), rgb(92, 9, 9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+font-size: 100%;
+color: #000;
+ text-shadow: rgb(3, 17, 13) 2px 2px 3px; 
+
+background-color: #ebbe0a;
+  padding: 10px;
+  clear: both;
+}
+
+
+
+BODY {color:green }
+
+P {color:rgb(78, 6, 6); 
+   font-size:20px;
+   font-family:Courier;
+   font-weight:bold;
+   font-style:italic;
+   line-height:30px;
+   letter-spacing:5px;
+   text-decoration:underline;
+   text-transform:capitalize;
+   text-align:left;
+   text-indent:30px;
+   
+   border-width:2px;
+   border-color:blue;
+   border-style:solid;
+  }

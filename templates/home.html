@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-4">Hello señor cliente!! Tiene problemas de seguridad en su ordenador o movil??</h1>
+    <p class="lead">Contacta con Cristobal y te aportará una solucion.</p>
+    <hr class="my-100">
+    <MARQUEE WIDTH=50% HEIGHT=60 ALIGN=BOTTOM>***EVITE SER ESPIADO Y GUARDE SU PRIVACIDAD***</MARQUEE> pulse Aquí
+    <a class="btn btn-primary btn-lg" href="descripcion_problema" role="button">Describe tu problema</a>
+    <ul>
+    <ul class="nav justify-content-center"></ul>
+    
+    <li><a href="{{ url_for('descripcion_problema') }}">Describa su problema</a></li>
+      
+      </ul> 
+
+      {% endblock %}
